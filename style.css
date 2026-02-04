@@ -198,7 +198,7 @@ h3 {
   color: var(--white);
   text-align: center;
   transition: transform 0.3s ease, border 0.3s ease;
-  border-radius: 8px;
+  border-radius: 1px;
 }
 
 .about-card h4 {
@@ -537,15 +537,6 @@ h3 {
   line-height: 1.7;
   color: #ddd;
 }
-
-/* Responsive */
-@media (max-width: 480px) {
-  .experience-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
 
 
 /* ===== CONTACT ===== */
@@ -1486,7 +1477,38 @@ h3 {
   font-size: clamp(40px, 6vw, 74px);
 }
 
+  /* About cards */
   .about-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
+  .about-card {
+    padding: 20px 15px;
+  }
+  .about-card h4 {
+    font-size: 18px;
+  }
+  .about-card p {
+    font-size: 13px;
+  }
+
+  /* Experience cards */
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .experience-card {
+    padding: 20px 15px;
+  }
+  .experience-card h4 {
+    font-size: 18px;
+  }
+  .experience-org {
+    font-size: 12px;
+  }
+  .experience-desc {
+    font-size: 13px;
+  }
+
 }
+
